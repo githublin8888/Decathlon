@@ -13,14 +13,14 @@ public class HeptHightJump {
 	CalcTrackAndField calc = new CalcTrackAndField();
 	InputResult inputResult = new InputResult();
 
-	// Calculate the score based on distance and height. Measured in cenimeters.
+	// Calculate the score based on distance and height. Measured in centimeters.
 	public void calculateResult(double distance) {
 
 		while (active) {
 
 			try {
 				// Acceptable values in cm
-				if (distance < 75.7) {
+				if (distance < 76) {
 					System.out.println("Value too low");
 					distance = inputResult.enterResult();
 				} else if (distance > 270) {
